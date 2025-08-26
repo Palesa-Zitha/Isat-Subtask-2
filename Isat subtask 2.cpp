@@ -46,7 +46,7 @@ void demo() {
 }
 
 // Display menu
-void showMenu() {
+void showMenu() {  
     cout << "\n=== Conversion Menu ===\n";
     cout << "1. Decimal to Binary\n";
     cout << "2. Binary to Decimal\n";
@@ -66,6 +66,7 @@ int main() {
 
         try {
             switch (choice) {
+                // If choice == 1, run this block
                 case 1: {
                     int decimal;
                     cout << "Enter a decimal number: ";
@@ -73,6 +74,7 @@ int main() {
                     cout << "Binary: " << decimalToBinary(decimal) << "\n";
                     break;
                 }
+                // If choice  == 2, run this block
                 case 2: {
                     string binary;
                     cout << "Enter a binary number: ";
@@ -80,6 +82,7 @@ int main() {
                     cout << "Decimal: " << binaryToDecimal(binary) << "\n";
                     break;
                 }
+                // If choice == 3, run this block
                 case 3: {
                     int decimal;
                     cout << "Enter a decimal number: ";
@@ -87,6 +90,7 @@ int main() {
                     cout << "Hexadecimal: " << decimalToHexadecimal(decimal) << "\n";
                     break;
                 }
+                // If choice == 4, run this block
                 case 4: {
                     string hexValue;
                     cout << "Enter a hexadecimal number: ";
@@ -94,10 +98,12 @@ int main() {
                     cout << "Decimal: " << hexadecimalToDecimal(hexValue) << "\n";
                     break;
                 }
+                // If choice == 5, run this code
                 case 5: {
                     demo();
                     break;
                 }
+                // If choice == 6, run this code
                 case 6:
                     cout << "Exiting program. Goodbye!\n";
                     break;
